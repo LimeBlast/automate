@@ -23,7 +23,7 @@ meta = meta_template.format(title="Drone Zone", service=tunein_service)
 two_hours = 7200
 
 for device in soco.discover():
-    if device.player_name == 'Living Room':
+    if device.player_name == 'Master Bedroom':
         break
     else:
         device = None
