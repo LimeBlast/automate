@@ -1,4 +1,5 @@
 import time
+import sys
 
 import soco
 
@@ -45,3 +46,6 @@ device.play_uri(uri, meta)
 
 print("Setting sleep timer")
 device.set_sleep_timer(two_hours)
+
+# http://stackoverflow.com/a/23452742/1049688
+sys.stdout.flush()

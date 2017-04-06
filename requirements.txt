@@ -1,2 +1,2 @@
-soco
-requests
+soco==0.12
+requests==2.4.3
