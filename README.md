@@ -42,7 +42,11 @@ sudo npm start
 
 ## Start on boot
 
-Add additional notes about how to deploy this on a live system
+I tried a few methods of making the script run on boot, but none of them worked. In the end, I added the following line to `/etc/rc.local`, which appears to have done the job, but I'm not sure is the best approach.
+
+```
+su pi -c 'sudo node /home/pi/Code/automate/dash.js < /dev/null &'
+```
 
 ## Authors
 
