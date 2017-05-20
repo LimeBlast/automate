@@ -2,3 +2,4 @@ soco==0.12
 requests==2.4.3
 slackclient==1.0.5
 python-dotenv==0.6.4
+amazon-dash==0.2.1

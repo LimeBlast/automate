@@ -1,0 +1,19 @@
+settings:
+  delay: 10
+devices:
+  ac:63:be:7b:85:8c:
+    name: Right Guard # armchair
+    user: pi
+    cmd: python3 armchair.py
+  0c:47:c9:e7:46:e5:
+    name: Fiesta kicthen towel # desk
+    user: pi
+    cmd: python3 desk.py
+  ac:63:be:7c:60:90:
+    name: Biona Organic # lunch
+    user: pi
+    cmd: python3 lunch.py
+  ac:63:be:39:43:68:
+    name: Nescafe Dolce Gusto # goodnight
+    user: pi
+    cmd: python3 goodnight.py
