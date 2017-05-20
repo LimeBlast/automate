@@ -6,16 +6,11 @@ Using Amazon Dash buttons to control Sonos speakers
 
 This is designed to be run on a Raspberry Pi 2 (or greater) running Raspbian. It has been tested using Raspbian installed via NOOBs 2.3.0, but may well work for other operating systems.
 
-After the usual set-up of Raspbian, you'll need to install libpcap-dev, npm and node, and update the latter two to more recent versions ([these instructions courtesy Dasher](https://github.com/maddox/dasher#raspberry-pi)):
+After the usual set-up of Raspbian, you'll need to install libpcap-dev and tcpdump.
 
 ```bash
 sudo apt-get install libpcap-dev
-
-sudo apt-get install npm
-sudo apt-get install node
-
-wget http://node-arm.herokuapp.com/node_latest_armhf.deb
-sudo dpkg -i node_latest_armhf.deb
+sudo apt-get install tcpdump
 ```
 
 Then you can clone the repo:
@@ -36,20 +31,13 @@ pip3 install -r requirements.txt
 
 Before testing it works by manually running the script:
 
-```
-sudo npm start
-```
+wip
 
 ## Start on boot
 
-I tried a few methods of making the script run on boot, but none of them worked. In the end, I added the following line to `/etc/rc.local`, which appears to have done the job, but I'm not sure is the best approach.
-
-```
-su pi -c 'sudo node /home/pi/Code/automate/dash.js < /dev/null &'
-```
+wip
 
 ## Authors
 
 * **Daniel Hollands** - *Initial work* - [LimeBlast](https://github.com/LimeBlast)
-* **Alex Hortin** - *node-dash-button* - [hortinstein](https://github.com/hortinstein)
 * **SoCo Team** - *SoCo* - [SoCo](https://github.com/orgs/SoCo/people)
