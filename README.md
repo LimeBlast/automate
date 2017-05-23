@@ -32,15 +32,22 @@ pip3 install -r requirements.txt
 Then tests it works by manually running the script:
 
 ```
-sudo amazon-dash run
+sudo amazon-dash --config ./amazon-dash/amazon-dash.yml run
 ```
 
 ## Start on boot
 
-I tried a few methods of making the script run on boot, but none of them worked. In the end, I added the following line to `/etc/rc.local`, which appears to have done the job, but I'm not sure is the best approach.
+This script uses systemd to start on boot. I might be able to automate this at some point, but right now the following steps are required:
+
+1. Copy `amazon-dash/amazon-dash.service` to `/etc/systemd/system/amazon-dash.service`.
+2. Copy `amazon-dash/amazon-dash.yml` to  `/etc/amazon-dash.yml`.
+3. Enable the service with `sudo systemctl enable amazon-dash`
+4. Start the service with `sudo systemctl start amazon-dash`
+
+If you run into any problems with this, the following command will give you the logs for the service:
 
 ```
-su pi -c 'cd /home/pi/Code/automate && sudo amazon-dash run < /dev/null &'
+sudo journalctl -u amazon-dash
 ```
 
 ## Authors
