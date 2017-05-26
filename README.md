@@ -54,4 +54,4 @@ sudo journalctl -u amazon-dash
 
 * **Daniel Hollands** - *Initial work* - [LimeBlast](https://github.com/LimeBlast)
 * **SoCo Team** - *SoCo* - [SoCo](https://github.com/orgs/SoCo/people)
-* **Nekmo** - *amazon-dash* - [amazon-dash]https://github.com/Nekmo/amazon-dash
+* **Nekmo** - *amazon-dash* - [amazon-dash](https://github.com/Nekmo/amazon-dash)
