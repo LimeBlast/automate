@@ -40,7 +40,7 @@ def main():
     device.volume = 25
 
     print("Saying goodnight")
-    device.play_uri('https://raw.githubusercontent.com/LimeBlast/automate/master/goodnight.mp3')
+    device.play_uri('https://raw.githubusercontent.com/LimeBlast/automate/master/assets/goodnight.mp3')
     time.sleep(3)
 
     print("Playing Drone Zone")
